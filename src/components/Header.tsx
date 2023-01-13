@@ -12,7 +12,6 @@ type Props = {
 const Header: React.FC<Props> = ({carts}) => {
 
     
-console.log(carts, 'app')
   return (
     <div className="header">
         <Link to={'/'}>
