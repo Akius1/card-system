@@ -28,18 +28,20 @@ const CartCard: React.FC<Props> = ({ id, quantity }) => {
   console.log(product);
 
 
-  const addQuantity = () => {
-     let isInCart: any =  cart && cart.map((val:any)=>{
-         if(val.id === id){
-            val.count + 1
-         }
-     })
+//   const addQuantity = () => {
+//      let isInCart: any =  cart && cart.map((val:any)=>{
+//         let count:any 
+//          if(val.id === id){
+//            count = val.count + 1
+//          }
 
-     setCart(isInCart)
-     localStorage.setItem("carts", JSON.stringify(cart))
-  }
+//      })
 
-  console.log(cart)
+//      setCart(isInCart)
+//      localStorage.setItem("carts", JSON.stringify(cart))
+//   }
+
+//   console.log(cart)
   // const addToCart = (item: Data) => {
   //   if(checkIfItemIsInCart(item)) return
 
@@ -86,7 +88,7 @@ const CartCard: React.FC<Props> = ({ id, quantity }) => {
             <div className="checkout__qty">
               <span>Qty: </span>
               <div className="checkout__add">
-              <AddIcon onClick={addQuantity}/>
+              <AddIcon />
               </div>
               
               <span>{quantity}</span>
