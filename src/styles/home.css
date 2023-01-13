@@ -1,0 +1,31 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.home__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 50px;
+}
+
+.button_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ column-gap: 5;
+}
+
+.button_row > button{
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    margin: 0 50px;
+    cursor: pointer;
+}
